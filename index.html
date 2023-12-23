@@ -9,6 +9,7 @@
     <!-- Tambahkan link stylesheet kustom jika diperlukan -->
     <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
   </head>
   <body>
     <!-- Navbar -->
@@ -46,10 +47,11 @@
     <section id="home" class="py-5 bg-dark">
       <div class="container text-center text-light">
         <!-- Tambahkan gambar profil Anda di sini -->
-        <img src="gambar\Profil.jpg" alt="Profil Saya" class="rounded-circle img-thumbnail mb-3" style="width: 20%; border-radius: 30%" />
-        <h1 class="font-weight-bold">Ahmad Rizqy <span class="text-primary">Yourin</span></h1>
-        <p class="lead">Web Designer & Developer</p>
-        <div class="col-md-4 m-auto">
+        <img src="gambar\Profil.jpg" alt="Profil Saya" class="rounded-circle img-thumbnail mb-3 animate__animated animate__fadeIn" style="width: 20%; border-radius: 30%" />
+        <h1 class="font-weight-bold animate__animated animate__fadeInDown">Ahmad Rizqy <span id="typed-output" class="text-primary"></span></h1>
+        <p class="lead animate__animated animate__fadeInDown">Web Designer & Developer</p>
+
+        <div class="col-md-4 m-auto animate__animated animate__fadeInUp">
           <a href="https://github.com/Hacfret" class="text-light" target="_blank"><i class="fab fa-github"></i></a>
         </div>
       </div>
@@ -60,8 +62,8 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-6 m-auto text-center">
-            <h2 class="">Tentang Saya</h2>
-            <p>
+            <h2 class="animate__animated animate__pulse">Tentang Saya</h2>
+            <p class="animate__animated animate__fadeInUp">
               Saya adalah seorang mahasiswa Teknik Komputer (2021) Universitas Dipenogoro asal Bekasi yang sedang menjalani semester 6, saat ini saya sedang mencari lowongan magang di sekitar Semarang. Saya memiliki pengalaman pada
               Frontend, Backend, Mobile, dan Database.
             </p>
@@ -74,7 +76,7 @@
     <section id="skills" class="bg-dark text-light py-5">
       <div class="container">
         <div class="row">
-          <div class="col-lg-6">
+          <div class="col-lg-6 animate__animated animate__slideInLeft">
             <h2 class="font-weight-bold">Soft Skills</h2>
             <ul>
               <li>Kemampuan berkomunikasi yang baik dan straight-forward</li>
@@ -83,10 +85,10 @@
               <li>Kreatif dan kritis</li>
             </ul>
           </div>
-          <div class="col-lg-6">
+          <div class="col-lg-6 animate__animated animate__slideInRight">
             <h2 class="font-weight-bold">Hard Skills</h2>
             <ul>
-              <li>Kemampuan berbahasa Inggris (written and verbal)</li>
+              <li>Kemampuan berbahasa Inggris (speaking and reading)</li>
               <li>Frontend: HTML, CSS, JavaScript + Framework seperti Bootstrap + Tools Figma</li>
               <li>Backend: Java</li>
               <li>Mobile: React Native</li>
@@ -101,13 +103,13 @@
     <section id="project" class="bg-light text-dark py-5">
       <div class="container">
         <div class="row">
-          <div class="col-lg-6 m-auto text-center">
+          <div class="row mt-3 m-auto animate__animated animate__pulse">
             <h2 class="">Projects Saya</h2>
           </div>
         </div>
         <div class="row mt-3">
           <div class="col-lg-6">
-            <div class="card">
+            <div class="card animate__animated animate__slideInUp">
               <img src="gambar\Website1.png" class="card-img-top" alt="Gambar Project 1" />
               <div class="card-body">
                 <h5 class="card-title">
@@ -117,8 +119,8 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-6">
-            <div class="card">
+          <div class="col-lg-6 pt-3">
+            <div class="card animate__animated animate__slideInUp">
               <img src="gambar\Website2.png" class="card-img-top" alt="Gambar Project 2" />
               <div class="card-body">
                 <h5 class="card-title">
@@ -129,7 +131,7 @@
             </div>
           </div>
           <div class="col-lg-6 pt-3">
-            <div class="card">
+            <div class="card animate__animated animate__slideInUp">
               <img src="gambar\Website3.png" class="card-img-top" alt="Gambar Project 3" />
               <div class="card-body">
                 <h5 class="card-title">
@@ -140,7 +142,7 @@
             </div>
           </div>
           <div class="col-lg-6 pt-3">
-            <div class="card">
+            <div class="card animate__animated animate__slideInUp">
               <img src="gambar\app.jpg" class="card-img-top" style="width: 30%; height: 30%; display: block; margin-left: auto; margin-right: auto" alt="Gambar Project 4" />
               <div class="card-body">
                 <h5 class="card-title">
@@ -199,8 +201,8 @@
     <!-- Kontak -->
     <section id="contact" class="py-5 bg-dark text-light">
       <div class="container text-center">
-        <h2>Kontak</h2>
-        <p>Hubungi saya untuk informasi lebih lanjut</p>
+        <h2 class="animate__animated animate__bounceIn">Kontak</h2>
+        <p class="animate__animated animate__bounceIn">Hubungi saya untuk informasi lebih lanjut</p>
 
         <!-- Ikon dan Informasi Kontak dalam 1 Baris -->
         <div class="row">
@@ -224,5 +226,22 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        var typed = new Typed("#typed-output", {
+          strings: ["Yourin"], // Teks yang ingin dianimasikan
+          typeSpeed: 250, // Kecepatan ketik (ms per karakter)
+          startDelay: 500, // Penundaan sebelum animasi dimulai (ms)
+          showCursor: true, // Menampilkan kursor animasi
+          cursorChar: "|", // Karakter kursor
+          loop: true, // Mengaktifkan pengulangan animasi
+          onComplete: function (self) {
+            // Hapus kursor setelah animasi selesai
+            self.cursor.remove();
+          },
+        });
+      });
+    </script>
   </body>
 </html>
