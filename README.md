@@ -1,3 +1,3 @@
 # Website-Portofolio
 
-https://hacfret.github.io/Website-Portofolio/
+https://rizqyyourin.github.io/Website-Portofolio/
